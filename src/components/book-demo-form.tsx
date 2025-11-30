@@ -304,10 +304,10 @@ export function BookDemoForm() {
                   <Button
                     type="button"
                     onClick={nextStep}
-                    className="bg-black text-white hover:bg-neutral-800 rounded-full px-8 py-6 text-lg"
+                    className="bg-black text-white hover:bg-neutral-800 rounded-full px-12 py-6 text-lg gap-1"
                   >
                     Next
-                    <ChevronRight className="w-4 h-4 ml-2" />
+                    <ChevronRight className="w-4 h-4" />
                   </Button>
                 </div>
               )}
