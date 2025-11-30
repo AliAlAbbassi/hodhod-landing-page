@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import React from "react";
 
+import { ShimmerButton } from "@/components/ui/shimmer-button";
+
 export function Hero() {
   return (
     <HeroHighlight
@@ -14,7 +16,7 @@ export function Hero() {
         </div>
       }
     >
-      <div className="flex flex-col items-center justify-center max-w-5xl mx-auto px-4 text-center gap-6">
+      <div className="flex flex-col items-center justify-center max-w-5xl mx-auto px-4 text-center gap-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,28 +34,27 @@ export function Hero() {
           </h1>
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-          className="text-lg md:text-xl text-neutral-600 max-w-3xl leading-relaxed"
-        >
-          10+ meetings in 90 days or you don't pay. Done for you.
-        </motion.p>
-        
         <motion.div
            initial={{ opacity: 0, y: 20 }}
            animate={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-           className="flex flex-col items-center gap-4 mt-2"
+           transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+           className="flex flex-col items-center"
         >
+           <p className="text-lg md:text-xl text-neutral-600 max-w-3xl leading-relaxed mb-2">
+            10+ meetings in 90 days or you don't pay. Done for you.
+           </p>
+           
            <p className="text-lg font-medium text-neutral-800">
              We generate pipeline — You close the deals.
            </p>
            
-           <button className="mt-4 px-8 py-4 rounded-full bg-black text-white font-bold text-lg transition-transform hover:scale-105 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900">
-              Book a Call
-           </button>
+           <div className="mt-16">
+             <ShimmerButton className="shadow-2xl h-20 px-16">
+                <span className="whitespace-pre-wrap text-center text-xl font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-3xl">
+                  Book a Call
+                </span>
+             </ShimmerButton>
+           </div>
         </motion.div>
       </div>
     </HeroHighlight>

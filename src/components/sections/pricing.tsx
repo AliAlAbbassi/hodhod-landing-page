@@ -1,5 +1,6 @@
 import React from "react";
 import { Check } from "lucide-react";
+import { ShimmerButton } from "@/components/ui/shimmer-button";
 
 export function Pricing() {
   const includes = [
@@ -31,7 +32,7 @@ export function Pricing() {
           </div>
           
           <div className="p-8 md:p-12 bg-white">
-            <div className="flex flex-col gap-4 mb-8">
+            <div className="flex flex-col gap-5 mb-10">
               {includes.map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
@@ -42,16 +43,18 @@ export function Pricing() {
               ))}
             </div>
             
-            <div className="bg-indigo-50 p-6 rounded-xl border border-indigo-100 mb-8 text-center">
+            <div className="bg-indigo-50 p-6 rounded-xl border border-indigo-100 mb-20 text-center">
               <p className="font-bold text-indigo-900 mb-1">Guarantee</p>
               <p className="text-indigo-700 text-sm">
                 10+ meetings in 90 days or we work for free until you get them.
               </p>
             </div>
 
-            <button className="w-full py-4 rounded-xl bg-black text-white font-bold text-lg transition-transform hover:scale-105 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900">
-              Book a Call
-            </button>
+            <ShimmerButton className="w-full h-20 shadow-2xl">
+              <span className="whitespace-pre-wrap text-center text-xl font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-3xl">
+                Book a Call
+              </span>
+            </ShimmerButton>
           </div>
         </div>
       </div>

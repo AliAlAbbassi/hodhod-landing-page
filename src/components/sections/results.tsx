@@ -1,4 +1,9 @@
 import React from "react";
+import {
+  GlowingStarsBackgroundCard,
+  GlowingStarsDescription,
+  GlowingStarsTitle,
+} from "@/components/ui/glowing-background-stars-card";
 
 export function Results() {
   const results = [
@@ -17,14 +22,31 @@ export function Results() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {results.map((item, index) => (
-            <div key={index} className="p-8 rounded-2xl bg-white border border-neutral-200 shadow-sm hover:shadow-md transition-shadow">
-              <p className="text-3xl md:text-4xl font-bold text-indigo-600 mb-2">
-                {item.metric}
-              </p>
-              <p className="text-lg text-neutral-600 font-medium">
-                {item.company}
-              </p>
-            </div>
+            <GlowingStarsBackgroundCard key={index}>
+              <GlowingStarsTitle>{item.company}</GlowingStarsTitle>
+              <div className="flex justify-between items-end">
+                <GlowingStarsDescription>
+                  {item.metric}
+                </GlowingStarsDescription>
+                <div className="h-8 w-8 rounded-full bg-[hsla(0,0%,100%,.1)] flex items-center justify-center">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5 8.625L6 13.125L13.5 1.875"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </GlowingStarsBackgroundCard>
           ))}
         </div>
       </div>
