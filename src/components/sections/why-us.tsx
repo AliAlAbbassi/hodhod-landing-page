@@ -26,10 +26,10 @@ export function WhyUs() {
   ];
 
   return (
-    <section className="py-24 bg-neutral-900 text-white">
+    <section className="py-24">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900">
             Why this works
           </h2>
         </div>

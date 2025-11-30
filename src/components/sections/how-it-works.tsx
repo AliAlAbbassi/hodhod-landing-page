@@ -1,61 +1,63 @@
 import React from "react";
+import { Timeline } from "@/components/ui/timeline";
 
 export function HowItWorks() {
-  const steps = [
-    {
-      step: 1,
-      title: "We learn your ICP",
-      description: "You fill out a questionnaire. We research your ideal customer — their pain points, motivations, what makes them reply.",
-      timeline: "Day 1-2",
-    },
-    {
-      step: 2,
-      title: "We set up your infrastructure",
-      description: "We configure your LinkedIn accounts, warm them up properly, and set up tracking. No risk to your accounts.",
-      timeline: "Day 3-5",
-    },
-    {
-      step: 3,
-      title: "We build lists and write sequences",
-      description: "We find prospects using buying signals — job changes, funding rounds, tech stack, hiring patterns. Then we write messages that don't sound like every other SDR.",
-      timeline: "Day 5-7",
-    },
-    {
-      step: 4,
-      title: "We run everything, you take meetings",
-      description: "Campaigns go live. We handle connections, follow-ups, conversations. Qualified prospects land on your calendar. You close.",
-      timeline: "Day 7+",
-    },
+  const data = [
+        {
+          title: "Step 1",
+          content: (
+            <div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-2">We learn your ICP</h3>
+              <p className="text-neutral-600 text-base md:text-lg font-normal mb-8">
+                You fill out a questionnaire. We research your ideal customer — their pain points, motivations, what makes them reply. (Day 1-2)
+              </p>
+            </div>
+          ),
+        },
+        {
+          title: "Step 2",
+          content: (
+            <div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-2">We set up your infrastructure</h3>
+              <p className="text-neutral-600 text-base md:text-lg font-normal mb-8">
+                We configure your LinkedIn accounts, warm them up properly, and set up tracking. No risk to your accounts. (Day 3-5)
+              </p>
+            </div>
+          ),
+        },
+        {
+          title: "Step 3",
+          content: (
+            <div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-2">We build lists and write sequences</h3>
+              <p className="text-neutral-600 text-base md:text-lg font-normal mb-8">
+                We find prospects using buying signals — job changes, funding rounds, tech stack, hiring patterns. Then we write messages that don't sound like every other SDR. (Day 5-7)
+              </p>
+            </div>
+          ),
+        },
+        {
+          title: "Step 4",
+          content: (
+            <div>
+              <h3 className="text-xl font-bold text-neutral-900 mb-2">We run everything, you take meetings</h3>
+              <p className="text-neutral-600 text-base md:text-lg font-normal mb-8">
+                Campaigns go live. We handle connections, follow-ups, conversations. Qualified prospects land on your calendar. You close. (Day 7+)
+              </p>
+            </div>
+          ),
+        },
   ];
 
   return (
-    <section className="py-24 border-y border-neutral-200 bg-neutral-50">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="text-center mb-16">
+    <section className="py-24 border-y border-neutral-200" id="how-it-works">
+      <div className="w-full">
+        <div className="max-w-5xl mx-auto px-4 mb-16 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900">
             Here's exactly what we do
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((item, index) => (
-            <div key={index} className="relative flex flex-col h-full">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="flex items-center justify-center w-10 h-10 rounded-full bg-black text-white font-bold text-lg">
-                  {item.step}
-                </span>
-                <span className="text-sm font-semibold text-neutral-500 uppercase tracking-wide bg-neutral-200/50 px-2 py-1 rounded">
-                  {item.timeline}
-                </span>
-              </div>
-              <h3 className="text-xl font-bold text-neutral-900 mb-3">
-                {item.title}
-              </h3>
-              <p className="text-neutral-600 leading-relaxed">
-                {item.description}
-              </p>
-            </div>
-          ))}
-        </div>
+        <Timeline data={data} />
       </div>
     </section>
   );

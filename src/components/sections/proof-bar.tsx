@@ -8,7 +8,7 @@ const stats = [
 
 export function ProofBar() {
   return (
-    <section className="w-full border-y border-neutral-200 bg-white">
+    <section className="w-full border-y border-neutral-200">
       <div className="max-w-5xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-neutral-200">
           {stats.map((stat, index) => (

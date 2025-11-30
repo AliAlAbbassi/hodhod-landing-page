@@ -51,7 +51,7 @@ export function Hero() {
             <Link href="/book">
               <ShimmerButton className="shadow-2xl h-16 px-8">
                 <span className="whitespace-nowrap text-center text-lg font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-xl">
-                  Book a Call
+                  Book Demo
                 </span>
               </ShimmerButton>
             </Link>

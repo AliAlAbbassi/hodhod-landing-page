@@ -12,18 +12,20 @@ import { DotBackground } from "@/components/ui/dot-background";
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative">
+    <>
       <DotBackground />
-      <Hero />
-      <ProofBar />
-      <ProblemSolution />
-      <HowItWorks />
-      <WhatsIncluded />
-      <Results />
-      <WhyUs />
-      <Pricing />
-      <FAQ />
-      <CTA />
-    </main>
+      <main className="min-h-screen relative">
+        <Hero />
+        {/*<ProofBar />*/}
+        <ProblemSolution />
+        <HowItWorks />
+        <WhatsIncluded />
+        <Results />
+        <WhyUs />
+        <Pricing />
+        <FAQ />
+        <CTA />
+      </main>
+    </>
   );
 }
