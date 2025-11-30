@@ -17,7 +17,13 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
 
@@ -29,12 +35,7 @@ const formSchema = z.object({
     "I don't do LinkedIn outreach",
     "Other",
   ]),
-  timeline: z.enum([
-    "Within a week",
-    "Next month",
-    "Next quarter",
-    "Not sure",
-  ]),
+  timeline: z.enum(["Within a week", "Next month", "Next quarter", "Not sure"]),
   firstName: z.string().min(1, "First name is required"),
   lastName: z.string().min(1, "Last name is required"),
   email: z.string().email("Invalid email address"),
@@ -53,7 +54,8 @@ const steps = [
   {
     id: "timeline",
     title: "Timeline",
-    description: "How soon are you looking to start LinkedIn outreach to grow pipeline?",
+    description:
+      "How soon are you looking to start LinkedIn outreach to grow pipeline?",
     fields: ["timeline"],
   },
   {
@@ -71,7 +73,8 @@ const steps = [
   {
     id: "calendar",
     title: "Book a Call",
-    description: "Talk to Ali to understand how well Hodhod can work for your company",
+    description:
+      "Talk to Ali to understand how well Hodhod can work for your company",
     fields: [],
   },
 ];
@@ -90,8 +93,12 @@ export function BookDemoForm() {
   // Cal.com initialization
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi({"namespace":"ali-hodhod"});
-      cal("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      const cal = await getCalApi({ namespace: "ali-hodhod" });
+      cal("ui", {
+        styles: { branding: { brandColor: "#000000" } },
+        hideEventTypeDetails: false,
+        layout: "month_view",
+      });
     })();
   }, []);
 
@@ -112,13 +119,15 @@ export function BookDemoForm() {
 
   // Helper to determine if we should show the Cal embed immediately
   // For this flow, we show it on the last step 'calendar'
-  
+
   return (
     <div className="w-full max-w-4xl mx-auto p-4">
       <Card className="border-0 shadow-none bg-transparent">
         {!isLastStep && (
           <CardHeader className="text-center">
-            <CardTitle className="text-3xl font-bold">{steps[currentStep].title}</CardTitle>
+            <CardTitle className="text-3xl font-bold">
+              {steps[currentStep].title}
+            </CardTitle>
             <CardDescription className="text-lg text-neutral-600">
               {steps[currentStep].description}
             </CardDescription>
@@ -218,9 +227,15 @@ export function BookDemoForm() {
                         name="firstName"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-lg">First Name</FormLabel>
+                            <FormLabel className="text-lg">
+                              First Name
+                            </FormLabel>
                             <FormControl>
-                              <Input placeholder="John" className="h-12 text-lg" {...field} />
+                              <Input
+                                placeholder="John"
+                                className="h-12 text-lg"
+                                {...field}
+                              />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -233,7 +248,11 @@ export function BookDemoForm() {
                           <FormItem>
                             <FormLabel className="text-lg">Last Name</FormLabel>
                             <FormControl>
-                              <Input placeholder="Doe" className="h-12 text-lg" {...field} />
+                              <Input
+                                placeholder="Doe"
+                                className="h-12 text-lg"
+                                {...field}
+                              />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -249,9 +268,15 @@ export function BookDemoForm() {
                         name="email"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-lg">Work Email</FormLabel>
+                            <FormLabel className="text-lg">
+                              Work Email
+                            </FormLabel>
                             <FormControl>
-                              <Input placeholder="john@company.com" className="h-12 text-lg" {...field} />
+                              <Input
+                                placeholder="john@company.com"
+                                className="h-12 text-lg"
+                                {...field}
+                              />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -262,9 +287,15 @@ export function BookDemoForm() {
                         name="website"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-lg">Company Website</FormLabel>
+                            <FormLabel className="text-lg">
+                              Company Website
+                            </FormLabel>
                             <FormControl>
-                              <Input placeholder="company.com" className="h-12 text-lg" {...field} />
+                              <Input
+                                placeholder="company.com"
+                                className="h-12 text-lg"
+                                {...field}
+                              />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -274,16 +305,26 @@ export function BookDemoForm() {
                   )}
 
                   {currentStep === 4 && (
-                    <div className="flex flex-col items-center justify-center w-full min-h-[800px] bg-white rounded-xl overflow-hidden border border-neutral-200">
-                       <h3 className="text-2xl font-bold mb-2 mt-8 text-center">Schedule your Strategy Call</h3>
-                       <p className="text-neutral-600 mb-8 text-center px-4">Talk to Ali to understand how well Hodhod can work for your company</p>
-                       <div className="w-full h-full flex-1">
-                         <iframe 
-                           src="https://cal.com/ali-hodhod?embed=true" 
-                           style={{width: "100%", height: "100%", border: "none", minHeight: "700px"}}
-                           title="Cal.com"
-                         ></iframe>
-                       </div>
+                    <div className="flex flex-col items-center justify-center w-full min-h-[600px] bg-white rounded-xl overflow-hidden border border-neutral-200 pt-8">
+                      <h3 className="text-2xl font-bold mb-2 text-center px-6">
+                        How Hodhod can scale my LinkedIn Outreach
+                      </h3>
+                      <p className="text-neutral-600 mb-8 text-center px-6">
+                        Talk to Ali to understand how well Hodhod can work for
+                        your company
+                      </p>
+                      <div className="w-full h-full flex-1">
+                        <iframe
+                          src="https://cal.com/ali-hodhod?embed=true"
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                            minHeight: "550px",
+                          }}
+                          title="Cal.com"
+                        ></iframe>
+                      </div>
                     </div>
                   )}
                 </motion.div>
@@ -296,7 +337,7 @@ export function BookDemoForm() {
                     variant="ghost"
                     onClick={prevStep}
                     disabled={currentStep === 0}
-                    className={`text-neutral-500 hover:text-neutral-900 ${currentStep === 0 ? 'invisible' : ''}`}
+                    className={`text-neutral-500 hover:text-neutral-900 ${currentStep === 0 ? "invisible" : ""}`}
                   >
                     <ChevronLeft className="w-4 h-4 mr-2" />
                     Back
