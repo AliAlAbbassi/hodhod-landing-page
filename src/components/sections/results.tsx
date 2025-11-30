@@ -3,7 +3,7 @@ import {
   GlowingStarsBackgroundCard,
   GlowingStarsDescription,
   GlowingStarsTitle,
-} from "@/components/ui/glowing-background-stars-card";
+} from "@/components/ui/glowing-stars";
 
 export function Results() {
   const results = [
@@ -13,7 +13,7 @@ export function Results() {
   ];
 
   return (
-    <section className="py-24">
+    <section className="py-24 bg-neutral-50 border-y border-neutral-200">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900">

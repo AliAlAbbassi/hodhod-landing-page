@@ -14,7 +14,7 @@ export function WhatsIncluded() {
   ];
 
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white border-y border-neutral-200">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1">

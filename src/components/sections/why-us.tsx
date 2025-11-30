@@ -3,7 +3,7 @@ import {
   GlowingStarsBackgroundCard,
   GlowingStarsDescription,
   GlowingStarsTitle,
-} from "@/components/ui/glowing-background-stars-card";
+} from "@/components/ui/glowing-stars";
 
 export function WhyUs() {
   const points = [

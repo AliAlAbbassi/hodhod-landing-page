@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export function ProblemSolution() {
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white border-y border-neutral-200">
       <div className="max-w-5xl mx-auto px-4 flex flex-col gap-24">
         {/* The Problem */}
         <div className="grid md:grid-cols-2 gap-12 items-center">
