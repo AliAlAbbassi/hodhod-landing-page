@@ -4,6 +4,7 @@ import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import React from "react";
 
 import { ShimmerButton } from "@/components/ui/shimmer-button";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -47,11 +48,13 @@ export function Hero() {
           </p>
 
           <div className="mt-16">
-            <ShimmerButton className="shadow-2xl h-16 px-8">
-              <span className="whitespace-nowrap text-center text-lg font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-xl">
-                Book Demo
-              </span>
-            </ShimmerButton>
+            <Link href="/book">
+              <ShimmerButton className="shadow-2xl h-16 px-8">
+                <span className="whitespace-nowrap text-center text-lg font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-xl">
+                  Book a Call
+                </span>
+              </ShimmerButton>
+            </Link>
           </div>
         </motion.div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Check } from "lucide-react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
+import Link from "next/link";
 
 export function Pricing() {
   const includes = [
@@ -50,11 +51,13 @@ export function Pricing() {
               </p>
             </div>
 
-            <ShimmerButton className="w-full h-16 shadow-2xl">
-              <span className="whitespace-nowrap text-center text-lg font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-xl">
-                Book a Call
-              </span>
-            </ShimmerButton>
+            <Link href="/book" className="w-full">
+              <ShimmerButton className="w-full h-20 shadow-2xl">
+                <span className="whitespace-nowrap text-center text-xl font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-2xl">
+                  Book a Call
+                </span>
+              </ShimmerButton>
+            </Link>
           </div>
         </div>
       </div>

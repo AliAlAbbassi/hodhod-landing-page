@@ -1,5 +1,6 @@
 import React from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
+import Link from "next/link";
 
 export function CTA() {
   return (
@@ -11,11 +12,13 @@ export function CTA() {
         <p className="text-xl md:text-2xl text-neutral-600 mb-24">
           10+ meetings in 90 days or you don't pay.
         </p>
-        <ShimmerButton className="shadow-2xl h-16 px-8">
-          <span className="whitespace-nowrap text-center text-lg font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-xl">
-            Book a Call
-          </span>
-        </ShimmerButton>
+        <Link href="/book">
+          <ShimmerButton className="shadow-2xl h-24 px-16">
+            <span className="whitespace-nowrap text-center text-2xl font-bold leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-4xl">
+              Book a Call
+            </span>
+          </ShimmerButton>
+        </Link>
       </div>
     </section>
   );
