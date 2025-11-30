@@ -1,5 +1,11 @@
 import React from "react";
-import { CheckCircle2, MessageSquare, Target, UserPlus, Calendar } from "lucide-react";
+import {
+  CheckCircle2,
+  MessageSquare,
+  Target,
+  UserPlus,
+  Calendar,
+} from "lucide-react";
 
 export function WhatsIncluded() {
   const items = [
@@ -14,7 +20,7 @@ export function WhatsIncluded() {
   ];
 
   return (
-    <section className="py-24 border-y border-neutral-200">
+    <section className="py-4">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1">
@@ -42,11 +48,13 @@ export function WhatsIncluded() {
               <MessageSquare className="w-8 h-8 text-indigo-600" />
               <span className="font-semibold text-neutral-900">Messaging</span>
             </div>
-             <div className="p-4 bg-white rounded-xl shadow-sm border border-neutral-100 flex flex-col gap-3">
+            <div className="p-4 bg-white rounded-xl shadow-sm border border-neutral-100 flex flex-col gap-3">
               <UserPlus className="w-8 h-8 text-indigo-600" />
-              <span className="font-semibold text-neutral-900">Connections</span>
+              <span className="font-semibold text-neutral-900">
+                Connections
+              </span>
             </div>
-             <div className="p-4 bg-white rounded-xl shadow-sm border border-neutral-100 flex flex-col gap-3">
+            <div className="p-4 bg-white rounded-xl shadow-sm border border-neutral-100 flex flex-col gap-3">
               <Calendar className="w-8 h-8 text-indigo-600" />
               <span className="font-semibold text-neutral-900">Meetings</span>
             </div>
