@@ -44,6 +44,9 @@ export function Hero() {
           </p>
 
           <p className="text-lg font-medium text-neutral-800">
+            Get a HODHOD expert to generate pipeline for you on LinkedIn.{" "}
+          </p>
+          <p className="text-lg font-medium text-neutral-800">
             We generate pipeline — You close the deals.
           </p>
 

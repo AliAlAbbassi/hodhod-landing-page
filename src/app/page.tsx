@@ -16,12 +16,6 @@ export default function Home() {
       <DotBackground />
       <main className="min-h-screen relative">
         <Hero />
-        {/*<ProofBar />*/}
-        <ProblemSolution />
-        <HowItWorks />
-        <WhatsIncluded />
-        <Results />
-        <WhyUs />
         <Pricing />
         <FAQ />
         <CTA />
