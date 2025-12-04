@@ -8,12 +8,10 @@ import { WhyUs } from "@/components/sections/why-us";
 import { Pricing } from "@/components/sections/pricing";
 import { FAQ } from "@/components/sections/faq";
 import { CTA } from "@/components/sections/cta";
-import { DotBackground } from "@/components/ui/dot-background";
 
 export default function Home() {
   return (
     <>
-      <DotBackground />
       <main className="min-h-screen relative">
         <Hero />
         <Pricing />
