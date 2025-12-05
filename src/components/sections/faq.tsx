@@ -9,36 +9,30 @@ import {
 export function FAQ() {
   const items = [
     {
-      question: "How fast can we start?",
-      answer: "First campaign live in 7 days. Most clients see first meetings within 2-3 weeks.",
+      question: "Which channels does HODHOD support?",
+      answer:
+        "HODHOD supports LinkedIn outreach, including connection requests and InMails. HODHOD users safely send 1000-1200 messages per seat every month.",
     },
     {
-      question: "Will this get our LinkedIn accounts banned?",
-      answer: "No. We warm up accounts properly, send 20-30 personalized messages per day, and never mass blast. Your accounts stay safe.",
+      question: "How safe is it and does HODHOD risk my LinkedIn account?",
+      answer:
+        "HODHOD is the safest LinkedIn automation tool on the market and operates within LinkedIn's guidelines to keep your account safe. We offer a 5x money-back guarantee if your account is ever compromised through Hodhod's usage, though this has never happened to any of your users.",
     },
     {
-      question: "What counts as a \"meeting\"?",
-      answer: "A booked call with someone matching your ICP who has decision-making power. Not random chats or tire-kickers.",
+      question:
+        "Do I have to commit to an Annual Plan like other alternatives?",
+      answer:
+        "No. Hodhod offers flexible Quarterly plans without requiring a long-term commitment.",
     },
     {
-      question: "Do we see who you're contacting?",
-      answer: "Yes. Full visibility. We send you the prospect list before reaching out.",
-    },
-    {
-      question: "What metrics do we get?",
-      answer: "Connection rates, reply rates, positive replies, meetings booked, pipeline value. Weekly reports.",
-    },
-    {
-      question: "Why not just hire an SDR?",
-      answer: "An SDR costs $70K+ per year, takes 3 months to ramp, and might not work out. We cost less, start in 7 days, and guarantee results. If we don't deliver, you don't pay.",
-    },
-    {
-      question: "What if we already have a sales team?",
-      answer: "We plug into your existing team. They focus on closing, we fill the top of the funnel.",
+      question: "How does HODHOD personalize messages? ",
+      answer:
+        "HODHOD uses research agents that scan the internet for relevant information about your prospect and their company. HODHOD researches things like company and prospect news, deep dives, competition, funding and hiring patterns, newsletter, blog and youtube videos yoru prospect has appeared on and uses that information to craft personalization that is actually relevant.",
     },
     {
       question: "What if it doesn't work?",
-      answer: "You don't pay. 10+ meetings in 90 days or we work for free. There's no risk.",
+      answer:
+        "You don't pay. 10+ meetings in 90 days or we work for free. There's no risk.",
     },
   ];
 

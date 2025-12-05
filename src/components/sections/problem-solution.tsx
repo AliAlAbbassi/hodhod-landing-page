@@ -15,12 +15,13 @@ export function ProblemSolution() {
       </div>
       <div className="relative z-10 max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto w-full">
-          <WobbleCard containerClassName="col-span-1 bg-white min-h-[300px] border border-neutral-200">
-            <div className="max-w-md">
-              <h2 className="text-left text-balance text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.015em] text-neutral-900">
+          <div className="col-span-1 bg-neutral-900 min-h-[300px] border border-neutral-800 relative overflow-hidden rounded-3xl p-8 md:p-12">
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-indigo-900/50 to-transparent pointer-events-none" />
+            <div className="max-w-full relative z-10">
+              <h2 className="text-left text-balance text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.015em] text-white">
                 Here's the problem
               </h2>
-              <div className="mt-4 text-left text-xl/8 text-neutral-700">
+              <div className="mt-4 text-left text-xl/8 text-neutral-300">
                 <p className="mb-4">
                   Your SDRs send hundreds of LinkedIn messages every week. Most
                   get ignored. The ones that don't? Generic replies that go
@@ -34,14 +35,15 @@ export function ProblemSolution() {
                 </p>
               </div>
             </div>
-          </WobbleCard>
+          </div>
 
-          <WobbleCard containerClassName="col-span-1 bg-white min-h-[300px] border border-neutral-200">
-            <div className="max-w-md">
-              <h2 className="text-left text-balance text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.015em] text-neutral-900">
+          <div className="col-span-1 bg-neutral-900 min-h-[300px] border border-neutral-800 relative overflow-hidden rounded-3xl p-8 md:p-12">
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-indigo-900/50 to-transparent pointer-events-none" />
+            <div className="max-w-full relative z-10">
+              <h2 className="text-left text-balance text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.015em] text-white">
                 What if it worked like this
               </h2>
-              <div className="mt-4 text-left text-xl/8 text-neutral-700">
+              <div className="mt-4 text-left text-xl/8 text-neutral-300">
                 <p className="mb-4">
                   What if every prospect got a message that felt like it was
                   written just for them? Based on their role. Their company's
@@ -54,12 +56,12 @@ export function ProblemSolution() {
                   managed everything — the targeting, the sequences, the replies
                   — so you just showed up to meetings?
                 </p>
-                <p className="font-bold text-neutral-900 mt-4">
+                <p className="font-bold text-white mt-4">
                   That's exactly what Hodhod does.
                 </p>
               </div>
             </div>
-          </WobbleCard>
+          </div>
         </div>
       </div>
     </section>

@@ -66,9 +66,9 @@ export default function Novatrix({
   useEffect(() => {
     if (!ctnDom.current) return
     const ctn = ctnDom.current
-    const renderer = new Renderer()
+    const renderer = new Renderer({ alpha: true })
     const gl = renderer.gl
-    gl.clearColor(1, 1, 1, 1)
+    gl.clearColor(0, 0, 0, 0)
 
     // eslint-disable-next-line prefer-const
     let program: Program
