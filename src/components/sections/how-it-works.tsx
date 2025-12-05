@@ -1,7 +1,7 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 
-export function HowItWorks() {
+export const HowItWorks = () => {
   const data = [
     {
       title: "Step 1",
@@ -74,4 +74,4 @@ export function HowItWorks() {
       </div>
     </section>
   );
-}
+};

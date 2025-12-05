@@ -6,7 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export function FAQ() {
+export const FAQ = () => {
   const items = [
     {
       question: "Which channels does HODHOD support?",
@@ -59,4 +59,4 @@ export function FAQ() {
       </div>
     </section>
   );
-}
+};

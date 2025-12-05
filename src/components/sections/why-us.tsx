@@ -5,23 +5,27 @@ import {
   GlowingStarsTitle,
 } from "@/components/ui/glowing-stars";
 
-export function WhyUs() {
+export const WhyUs = () => {
   const points = [
     {
       title: "AI does the research",
-      description: "Every prospect gets researched — their role, company, tech stack, what they post about. No generic templates.",
+      description:
+        "Every prospect gets researched — their role, company, tech stack, what they post about. No generic templates.",
     },
     {
       title: "Experts run the campaigns",
-      description: "A dedicated Hodhod expert manages your outreach daily. Not a bot. Not you. Us.",
+      description:
+        "A dedicated Hodhod expert manages your outreach daily. Not a bot. Not you. Us.",
     },
     {
       title: "We only do dev tools",
-      description: "We understand your buyers because we are your buyers. No generic B2B playbook.",
+      description:
+        "We understand your buyers because we are your buyers. No generic B2B playbook.",
     },
     {
       title: "Engineers writing to engineers",
-      description: "Your messages won't sound like desperate SDR spam. They'll sound like a peer reaching out.",
+      description:
+        "Your messages won't sound like desperate SDR spam. They'll sound like a peer reaching out.",
     },
   ];
 
@@ -48,4 +52,4 @@ export function WhyUs() {
       </div>
     </section>
   );
-}
+};

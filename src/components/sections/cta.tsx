@@ -2,12 +2,13 @@ import React from "react";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 import Link from "next/link";
 
-export function CTA() {
+export const CTA = () => {
   return (
     <section className="py-24 border-t border-neutral-200">
       <div className="max-w-4xl mx-auto px-4 text-center flex flex-col items-center">
         <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-8 tracking-tight">
-          AI does the research. <br/> Experts run the campaigns. <br/> You take the meetings.
+          AI does the research. <br /> Experts run the campaigns. <br /> You
+          take the meetings.
         </h2>
         <p className="text-xl md:text-2xl text-neutral-600 mb-24">
           10+ meetings in 90 days or you don't pay.
@@ -22,4 +23,4 @@ export function CTA() {
       </div>
     </section>
   );
-}
+};

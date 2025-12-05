@@ -5,11 +5,17 @@ import {
   GlowingStarsTitle,
 } from "@/components/ui/glowing-stars";
 
-export function Results() {
+export const Results = () => {
   const results = [
-    { metric: "+14 meetings in 47 days", company: "Series A dev tools startup" },
+    {
+      metric: "+14 meetings in 47 days",
+      company: "Series A dev tools startup",
+    },
     { metric: "+9 meetings in 30 days", company: "DevOps platform" },
-    { metric: "$180K pipeline generated", company: "API infrastructure company" },
+    {
+      metric: "$180K pipeline generated",
+      company: "API infrastructure company",
+    },
   ];
 
   return (
@@ -25,9 +31,7 @@ export function Results() {
             <GlowingStarsBackgroundCard key={index}>
               <GlowingStarsTitle>{item.company}</GlowingStarsTitle>
               <div className="flex justify-between items-end">
-                <GlowingStarsDescription>
-                  {item.metric}
-                </GlowingStarsDescription>
+                <GlowingStarsDescription>{item.metric}</GlowingStarsDescription>
                 <div className="h-8 w-8 rounded-full bg-[hsla(0,0%,100%,.1)] flex items-center justify-center">
                   <svg
                     width="12"
@@ -52,4 +56,4 @@ export function Results() {
       </div>
     </section>
   );
-}
+};

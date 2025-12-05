@@ -7,7 +7,7 @@ const stats = [
   { number: "7", label: "days to first campaign live" },
 ];
 
-export function ProofBar() {
+export const ProofBar = () => {
   return (
     <section className="relative w-full border-y border-neutral-200 overflow-hidden">
       {/* Novatrix Background Layer */}
@@ -36,4 +36,4 @@ export function ProofBar() {
       </div>
     </section>
   );
-}
+};

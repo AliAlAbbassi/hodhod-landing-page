@@ -24,7 +24,7 @@ import {
 import { Highlight } from "@/components/ui/hero-highlight";
 import { cn } from "@/lib/utils";
 
-export function PipelineAcceleration() {
+export const PipelineAcceleration = () => {
   const automationFeatures = [
     {
       title: "Zero complex integrations",
@@ -267,4 +267,4 @@ export function PipelineAcceleration() {
       </div>
     </section>
   );
-}
+};

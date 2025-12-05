@@ -1,7 +1,7 @@
 import React from "react";
 import { Check } from "lucide-react";
 
-export function WhatsIncluded() {
+export const WhatsIncluded = () => {
   const items = [
     "LinkedIn account setup & warmup",
     "ICP research & targeting",
@@ -40,4 +40,4 @@ export function WhatsIncluded() {
       </div>
     </section>
   );
-}
+};

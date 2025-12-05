@@ -2,7 +2,7 @@ import React from "react";
 import { WobbleCard } from "@/components/ui/wobble-card";
 import Novatrix from "@/components/ui/novatrix-background";
 
-export function ProblemSolution() {
+export const ProblemSolution = () => {
   return (
     <section className="relative py-24 border-y border-neutral-200 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-30">
@@ -66,4 +66,4 @@ export function ProblemSolution() {
       </div>
     </section>
   );
-}
+};
