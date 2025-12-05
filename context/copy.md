@@ -6,8 +6,12 @@ hero:
   headline: AI LinkedIn Agent That Books Meetings With Engineering Leaders.
   subheadline: 10+ meetings in 90 days or you don't pay. Done for you.
   value_prop: Get a HODHOD expert to generate pipeline for you on LinkedIn. 
-  Done for you service with booked meetings. 
+  <!--Done for you service with booked meetings. -->
+  We generate pipeline — You close the deals.
   cta: Book a Call
+
+Massively Accelerate your Outbound Pipelines With HODHOD
+Increase your total sales by 7% to 15% by accelerating your outbound pipelines with HODHOD
 
 verse:
   hook: Qualify every lead for ICP fit, conduct deep research, and craft hyper-personalized messages that sound just like you on LinkedIn while keeping your account safe.
