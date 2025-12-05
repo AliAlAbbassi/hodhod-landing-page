@@ -12,7 +12,10 @@ export function ProofBar() {
       <div className="max-w-5xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-neutral-200">
           {stats.map((stat, index) => (
-            <div key={index} className="flex flex-col items-center justify-center p-4">
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center p-4"
+            >
               <span className="text-4xl md:text-5xl font-bold text-neutral-900 mb-2">
                 {stat.number}
               </span>

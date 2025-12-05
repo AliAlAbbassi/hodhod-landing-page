@@ -8,12 +8,20 @@ import { WhyUs } from "@/components/sections/why-us";
 import { Pricing } from "@/components/sections/pricing";
 import { FAQ } from "@/components/sections/faq";
 import { CTA } from "@/components/sections/cta";
+import { PipelineAcceleration } from "@/components/sections/pipeline-acceleration";
 
 export default function Home() {
   return (
     <>
       <main className="min-h-screen relative">
         <Hero />
+        <ProofBar />
+        <PipelineAcceleration />
+        <ProblemSolution />
+        <HowItWorks />
+        <Results />
+        <WhatsIncluded />
+        <WhyUs />
         <Pricing />
         <FAQ />
         <CTA />
