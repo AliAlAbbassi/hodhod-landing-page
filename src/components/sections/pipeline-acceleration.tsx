@@ -24,92 +24,92 @@ import {
 import { Highlight } from "@/components/ui/hero-highlight";
 import { cn } from "@/lib/utils";
 
+const automationFeatures = [
+  {
+    title: "Zero complex integrations",
+    icon: <Zap className="w-6 h-6 text-amber-500" />,
+    description: "Get started instantly without messy setups.",
+  },
+  {
+    title: "Talks like you",
+    icon: <MessageSquare className="w-6 h-6 text-blue-500" />,
+    description: "Hyper-personalized messages that sound authentic.",
+  },
+  {
+    title: "Keeps account safe",
+    icon: <Shield className="w-6 h-6 text-green-500" />,
+    description: "Operates within limits to protect your reputation.",
+  },
+  {
+    title: "One person powerhouse",
+    icon: <User className="w-6 h-6 text-purple-500" />,
+    description: "Scale your outreach without hiring a team.",
+  },
+];
+
+const steps = [
+  {
+    step: "01",
+    title: "Find High Intent Leads",
+    description:
+      "Identify leads that are actively in the market for a solution.",
+    icon: <Target className="w-5 h-5" />,
+  },
+  {
+    step: "02",
+    title: "Deep Research",
+    description: "Analyze every prospect across 60+ data points.",
+    icon: <Database className="w-5 h-5" />,
+  },
+  {
+    step: "03",
+    title: "Qualify & Prioritize",
+    description:
+      "Automatically qualify for ICP fit and prioritize the best leads.",
+    icon: <Search className="w-5 h-5" />,
+  },
+  {
+    step: "04",
+    title: "Hyper-Personalized Messaging",
+    description: "Craft messages in your unique voice that resonate.",
+    icon: <PenTool className="w-5 h-5" />,
+  },
+  {
+    step: "05",
+    title: "Scale & Manage",
+    description: "Send at scale, manage replies, and keep your account safe.",
+    icon: <Send className="w-5 h-5" />,
+  },
+];
+
+const visitorProcess = [
+  {
+    title: "Recognize",
+    description:
+      "HODHOD recognizes visitors using your existing data and obtains their contact info.",
+    icon: <Eye className="w-6 h-6 text-indigo-500" />,
+  },
+  {
+    title: "Learn",
+    description:
+      "Sees what they are most interested in on your website and learns who they are.",
+    icon: <Brain className="w-6 h-6 text-pink-500" />,
+  },
+  {
+    title: "ReachOut",
+    description:
+      "If they don't convert, HODHOD reaches out via LinkedIn to drive action.",
+    icon: <Send className="w-6 h-6 text-orange-500" />,
+  },
+  {
+    title: "Interact",
+    description:
+      "Trained on your business to interact, reply, and convert visitors using proven methods.",
+    icon: <MessageCircle className="w-6 h-6 text-teal-500" />,
+  },
+];
+
 export const PipelineAcceleration = () => {
-  const automationFeatures = [
-    {
-      title: "Zero complex integrations",
-      icon: <Zap className="w-6 h-6 text-amber-500" />,
-      description: "Get started instantly without messy setups.",
-    },
-    {
-      title: "Talks like you",
-      icon: <MessageSquare className="w-6 h-6 text-blue-500" />,
-      description: "Hyper-personalized messages that sound authentic.",
-    },
-    {
-      title: "Keeps account safe",
-      icon: <Shield className="w-6 h-6 text-green-500" />,
-      description: "Operates within limits to protect your reputation.",
-    },
-    {
-      title: "One person powerhouse",
-      icon: <User className="w-6 h-6 text-purple-500" />,
-      description: "Scale your outreach without hiring a team.",
-    },
-  ];
-
-  const steps = [
-    {
-      step: "01",
-      title: "Find High Intent Leads",
-      description:
-        "Identify leads that are actively in the market for a solution.",
-      icon: <Target className="w-5 h-5" />,
-    },
-    {
-      step: "02",
-      title: "Deep Research",
-      description: "Analyze every prospect across 60+ data points.",
-      icon: <Database className="w-5 h-5" />,
-    },
-    {
-      step: "03",
-      title: "Qualify & Prioritize",
-      description:
-        "Automatically qualify for ICP fit and prioritize the best leads.",
-      icon: <Search className="w-5 h-5" />,
-    },
-    {
-      step: "04",
-      title: "Hyper-Personalized Messaging",
-      description: "Craft messages in your unique voice that resonate.",
-      icon: <PenTool className="w-5 h-5" />,
-    },
-    {
-      step: "05",
-      title: "Scale & Manage",
-      description: "Send at scale, manage replies, and keep your account safe.",
-      icon: <Send className="w-5 h-5" />,
-    },
-  ];
-
-  const visitorProcess = [
-    {
-      title: "Recognize",
-      description:
-        "HODHOD recognizes visitors using your existing data and obtains their contact info.",
-      icon: <Eye className="w-6 h-6 text-indigo-500" />,
-    },
-    {
-      title: "Learn",
-      description:
-        "Sees what they are most interested in on your website and learns who they are.",
-      icon: <Brain className="w-6 h-6 text-pink-500" />,
-    },
-    {
-      title: "ReachOut",
-      description:
-        "If they don't convert, HODHOD reaches out via LinkedIn to drive action.",
-      icon: <Send className="w-6 h-6 text-orange-500" />,
-    },
-    {
-      title: "Interact",
-      description:
-        "Trained on your business to interact, reply, and convert visitors using proven methods.",
-      icon: <MessageCircle className="w-6 h-6 text-teal-500" />,
-    },
-  ];
-
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
